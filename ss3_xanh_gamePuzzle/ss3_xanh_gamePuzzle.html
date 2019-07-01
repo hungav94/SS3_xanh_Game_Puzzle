@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Game Puzzle</title>
+    <style>
+        div{
+            width: 600px;
+            margin: 0 auto;
+        }
+        img {
+            box-shadow: 2px 3px 3px black;
+            width: 600px;
+            height: 150px;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <form>
+        <table>
+            <tr>
+                <td>
+                    <img id="img1" src="images/funny-cat1_part1x1.jpg" onclick="click1();"/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img id="img2" src="images/funny-cat1_part2x1.jpg" onclick="click2();"/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img id="img3" src="images/funny-cat1_part3x1.jpg" onclick="click3();"/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img id="img4" src="images/funny-cat1_part4x1.jpg" onclick="click4();"/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img id="img5" src="images/funny-cat1_part5x1.jpg" onclick="click5();"/>
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>
+<script>
+    var showImg1 = [
+        'panda_swap_part1x1.jpg',
+        'monkey_part1x1.jpg',
+        'funny-cat1_part1x1.jpg',
+    ];
+    var showImg2 = [
+        'panda_swap_part2x1.jpg',
+        'monkey_part2x1.jpg',
+        'funny-cat1_part2x1.jpg',
+    ];
+    var showImg3 = [
+        'panda_swap_part3x1.jpg',
+        'monkey_part3x1.jpg',
+        'funny-cat1_part3x1.jpg',
+    ];
+    var showImg4 = [
+        'panda_swap_part4x1.jpg',
+        'monkey_part4x1.jpg',
+        'funny-cat1_part4x1.jpg',
+    ];
+    var showImg5 = [
+        'panda_swap_part5x1.jpg',
+        'monkey_part5x1.jpg',
+        'funny-cat1_part5x1.jpg',
+    ];
+    var dem = 0;
+    // var panda = ['panda_swap_part1x1.jpg',
+    //     'panda_swap_part2x1.jpg',
+    //     'panda_swap_part3x1.jpg',
+    //     'panda_swap_part4x1.jpg',
+    //     'panda_swap_part5x1.jpg'
+    // ];
+    // var monkey = ['monkey_part1x1.jpg',
+    //     'monkey_part2x1.jpg',
+    //     'monkey_part3x1.jpg',
+    //     'monkey_part4x1.jpg',
+    //     'monkey_part5x1.jpg'
+    // ];
+    // var cat = ['funny-cat1_part1x1.jpg',
+    //     'funny-cat1_part2x1.jpg',
+    //     'funny-cat1_part3x1.jpg',
+    //     'funny-cat1_part4x1.jpg',
+    //     'funny-cat1_part5x1.jpg'
+    // ];
+
+    function click1() {
+        if (dem == (showImg1.length - 1)) {
+            dem = 0;
+        } else {
+            dem++;
+        }
+        img1.src = 'images/' + showImg1[dem];
+    }
+
+    function click2() {
+        if (dem == (showImg2.length - 1)) {
+            dem = 0;
+        } else {
+            dem++
+        }
+        img2.src = 'images/' + showImg2[dem];
+    }
+
+    function click3() {
+        if (dem == (showImg3.length - 1)) {
+            dem = 0;
+        } else {
+            dem++
+        }
+        img3.src = 'images/' + showImg3[dem];
+    }
+
+    function click4() {
+        if (dem == (showImg4.length - 1)) {
+            dem = 0;
+        } else {
+            dem++
+        }
+        img4.src = 'images/' + showImg4[dem];
+    }
+
+    function click5() {
+        if (dem == (showImg5.length - 1)) {
+            dem = 0;
+        } else {
+            dem++
+        }
+        img5.src = 'images/' + showImg5[dem];
+    }
+</script>
+</body>
+</html>
